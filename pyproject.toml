@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "job-monitoring"
+version = "0.1.0"
+description = ""
+authors = ["Kimberly Mahoney <kimberly.mahoney@databricks.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+databricks-sdk = "^0.16.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.9"
+pytest = "^7.4.4"
+
+[tool.ruff]
+extend-select = ["I"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
